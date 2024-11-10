@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup for Stress Therapy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-image: url('https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlOV8zZF92aXN1YWxpemF0aW9uX29mX3Zhc3RfZGF0YV9zdHJlYW1zX2Zsb3dpbmdfaV8yZjY3YmJmNC01ZmNjLTQzNzUtYTNlMi02ZjVlMTA4YWYxNDUtMDAxLWMuanBn.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="signupForm" action="/server">
+                    <h1 id="h1">Sign up</h1>
+                    <div>
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <label for="username">Username : </label>
+                        <input type="text" placeholder="Generate Username" id="username" name="user">
+                      </div>
+                      <br>
+                      
+                      <label for="D">Education</label>
+                      <select name="degree" id="D">
+                        <option value="High School">High School</option>
+                        <option value="UG">UG</option>
+                        <option value="PG">PG</option>
+                      </select>
+                    <br><br>
+                    <div>
+                        <label for="E">Year of study</label>
+                        <select name="year" id="E">
+                          <option value="pta nhi ">Select year of study</option>
+                          <option value="1st">1st year</option>
+                          <option value="2nd">2nd year</option>
+                          <option value="3rd">3rd year</option>
+                          <option value="4th">4th year</option>
+                        </select>
+                      </div><br>
+                      <label for="email"> Email : </label>
+                   <input type="email" placeholder="Enter your email"><br>
+                   <br>
+                   <label for="pno">Phone no. : </label>
+                   <input type="number" placeholder="Enter your phone no."><br><br>
+                   <button class="B">PLease verify</button><br><br>
+                    <div>
+                        <label for="password">Password : </label>
+                        <input type="password" placeholder="Password" id="pass">
+                    </div><br>
+                    <div>
+                        <label for="password">Password : </label>
+                        <input type="password" placeholder="Confirm password" id="pass">
+                      </div><br>
+                    <div>
+                        
+                      Do you agree with all the terms and conditions?
+                      <br>
+                      <a href="terms-and-conditions.html">Terms and Conditions</a>
+                      <br>
+                          
+                          <input type="checkbox" name="agree" id="agree">
+                          <label for="agree">Yes, I agree</label>
+                          
+                    </div><br>
+                       <button class="B">Register</button>
+                  </form>
+                </div>
+              </div>
+        </form>
+    </div>
+    
+
+
+
+
+
+    </body>
+    </html>
