@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision</title>
+ 
+</head>
+<body>
+    <header>
+            <div><img src="final_logo.png" width="60"></div>
+            <!-- <h2><i>"Shape your future with right guide"</i></h2> -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="casestudy.html">Case Study</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1 id="typewriter" class="wel"></h1>
+            <h1 id="welcome">Welcome to TechVision</h1>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TechVision. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+    }
+    .wel{
+  font-family: monospace;
+  text-align: center;
+  background-color: #C1ECE4;
+}
+
+#typewriter {
+  font-size: 3em;
+  color: #04364A;
+}
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #35A29F;
+        padding: 10px 20px;
+    }
+   
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #35A29F;
+        color: white;
+    }
+    #welcome {
+  animation: floatIn 2s ease-in-out;
+  font-size: 4em;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
