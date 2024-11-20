@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup for Stress Therapy</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -51,27 +51,28 @@ button:hover {
 </head>
 <body>
     <div class="container">
-        <form id="signupForm" action="/server">
-                    <h1 id="h1">Sign up</h1>
+        <form id="signupForm" action="/TechVision/cre-sign.html" method="post">
+                    <h1 id="h1">Sign Up</h1>
                     <div>
                         <label for="name">Name :</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="uname" placeholder="Enter your name" required>
                         <label for="username">Username : </label>
-                        <input type="text" placeholder="Generate Username" id="username" name="user">
+                        <input type="text" placeholder="Generate Username" id="username" name="username">
                       </div>
                       <br>
                       
-                      <label for="D">Education</label>
-                      <select name="degree" id="D">
+                      <label for="edu">Education</label>
+                      <select name="degree" id="edu" name="education">
                         <option value="High School">High School</option>
-                        <option value="UG">UG</option>
-                        <option value="PG">PG</option>
+                        <option value="Hig-sec-school">Higher secondary school</option>
+                        <option value="UG">Undergraduate</option>
+                        <option value="PG">Postgraduate</option>
                       </select>
                     <br><br>
                     <div>
-                        <label for="E">Year of study</label>
-                        <select name="year" id="E">
-                          <option value="pta nhi ">Select year of study</option>
+                        <label for="yearS">Year of study</label>
+                        <select id="yearS" name="year">
+                          <option value="none">Select year of study</option>
                           <option value="1st">1st year</option>
                           <option value="2nd">2nd year</option>
                           <option value="3rd">3rd year</option>
@@ -79,18 +80,18 @@ button:hover {
                         </select>
                       </div><br>
                       <label for="email"> Email : </label>
-                   <input type="email" placeholder="Enter your email"><br>
+                   <input id="email" type="email" name="email" placeholder="Enter your email"><br>
                    <br>
                    <label for="pno">Phone no. : </label>
-                   <input type="number" placeholder="Enter your phone no."><br><br>
-                   <button class="B">Click to verify</button><br><br>
+                   <input type="number" id="pno" name="phoneNo" placeholder="Enter your phone no."><br><br>
+                   <!-- <button class="B">Click to verify</button><br><br> -->
                     <div>
-                        <label for="password">Password : </label>
-                        <input type="password" placeholder="Password" id="pass">
+                        <label for="pass">Password : </label>
+                        <input type="password" placeholder="Password" id="pass" name="password">
                     </div><br>
                     <div>
-                        <label for="password">Password : </label>
-                        <input type="password" placeholder="Confirm password" id="pass">
+                        <label for="Cpass">Confirm Password : </label>
+                        <input type="password" placeholder="Re-enter password" id="Cpass">
                       </div><br>
                     <div>
                         
@@ -99,11 +100,11 @@ button:hover {
                       <a href="terms-and-conditions.html">Terms and Conditions</a>
                       <br>
                           
-                          <input type="checkbox" name="agree" id="agree">
+                          <input type="checkbox" id="agree">
                           <label for="agree">Yes, I agree</label>
                           
                     </div><br>
-                       <button class="B">Register</button>
+                       <button class="btn">Sign Up</button>
                   </form>
                 </div>
               </div>
