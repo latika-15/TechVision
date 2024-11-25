@@ -192,7 +192,7 @@ button:hover{
         <div class="input-group">
             <i class="fas fa-lock"></i>
            
-            <input type="password" id="pass" placeholder="Enter your password">
+            <input type="password" id="pass" name="pass" placeholder="Enter your password">
             <label for="pass">Password:</label>
         </div>
         <input type="submit" class="btn" value="Sign Up" name="signUp">
@@ -212,7 +212,7 @@ button:hover{
 
     <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
-        <form method="POST" action="register.php">
+        <form method="POST" action="log.php">
           
                     <div class="input-group">
                         <i class="fas fa-envelope" ></i>
@@ -245,5 +245,8 @@ button:hover{
         </div>
         </div>
         <script src="script.js"></script>
+        
+
+
 </body>
 </html>
