@@ -224,12 +224,12 @@ button:hover{
             <div class="input-group">
                 <i class="fas fa-lock"></i>
              
-                <input type="password" id="pass" placeholder="Enter your password">
+                <input type="password" id="pass" name="pass" placeholder="Enter your password">
                 <label for="pass">Password:</label>
             </div>
-            <p class="recover">
-                <a href="#">Recover password</a>
-            </p>
+            <!-- <p class="recover">
+                <a href="recover_password.html">Recover password</a>
+            </p> -->
             <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
         <p class="or">

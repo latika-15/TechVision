@@ -30,8 +30,8 @@
         </div>
     
         <h1 id="welcome">Welcome to TechVision</h1>
-        <p>Your ultimate guide to acing your college journey with the perfect blend of tech and non-tech courses, gaining right skills, certifications, and training -- One semester at a time!.</p>
-        <a href="login.html" class="get-started-button">Get Started</a>
+        <p>Your ultimate guide to acing your college journey with the perfect blend of tech courses, gaining right skills, certifications, and training -- One semester at a time!.</p>
+        <a href="login.php" class="get-started-button">Get Started</a>
     </section>
    
     <!-- Features Section -->
@@ -57,7 +57,7 @@
 <section id="about" class="about-section">
     <h2>About Us</h2>
     <p>TechVision is a platform designed to empower college students by providing structured guidance on semester-wise planning, courses, and certifications. Our mission is to simplify your academic journey, enabling you to focus on achieving your dreams.</p>
-    <img src="about-us.jpg" alt="About Us">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.skL2AGbKpUabINQBrqwpiAHaEN&pid=Api&P=0&h=180xam" alt="About Us">
 <div class="how-it-works">
         <h3>How It Works:</h3>
         <div class="steps">
@@ -77,16 +77,15 @@
         </div>
 </section>
 
-     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
     
     <footer>

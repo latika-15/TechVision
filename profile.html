@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Profile</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background:  #278aab;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background:  #a1e8ff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Your Profile</h1>
+        <form id="profileForm">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <button type="button" id="verifyPhone">Verify</button>
+
+            <label for="school_or_college">Are you in School or College?</label>
+            <select id="school_or_college" name="school_or_college" required>
+                <option value="school">School</option>
+                <option value="college">College</option>
+            </select>
+
+            <label for="year_or_class">Class/Year:</label>
+            <input type="text" id="year_or_class" name="year_or_class" required>
+
+            <label for="course_summary">Course Summary:</label>
+            <textarea id="course_summary" name="course_summary" required></textarea>
+
+            <label for="interests">Areas of Interest:</label>
+            <input type="text" id="interests" name="interests" placeholder="e.g., Web Development, AI, Data Science">
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("profileForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    fetch("save_profile.php", {
+        method: "POST",
+        body: formData,
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            if (data.success) {
+                alert("Profile saved successfully!");
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Failed to save profile. Please try again.");
+            }
+        });
+});
+
+document.getElementById("verifyPhone").addEventListener("click", () => {
+    const phone = document.getElementById("phone").value;
+
+    if (!phone || phone.length < 10) {
+        alert("Please enter a valid phone number.");
+        return;
+    }
+
+    alert("Phone verification feature is not yet implemented.");
+});
+
+    </script>
+</body>
+</html>
